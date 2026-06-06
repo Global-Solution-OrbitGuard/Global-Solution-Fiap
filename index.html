@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>OrbitGuard</title>
+</head>
+<body>
+  
+  <!-- HEADER — fixo no topo, com nav e botão-->
+
+  <header class="header">
+    <a href="#" class="logo">Orbit<span>Guard</span></a>
+    
+    <nav class="nav">
+      <!-- Os hrefs apontam para o id de cada seção -->
+      <a href="#problema">Problema</a>
+      <a href="#tecnologia">Tecnologia</a>
+      <a href="#objetivos">Objetivos</a>
+      <a href="#publico">Público-alvo</a>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#aplicacao">Aplicação</a>
+    </nav>
+
+    <a href="plataforma.html" class="btn-nav">Acessar Plataforma</a>
+  </header>
+
+
+  <!-- HERO — seção de destaque (antes das 6)
+       Você pode manter, remover ou adaptar -->
+
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-texto">
+        <h1>
+          Monitoramento inteligente de
+          <span class="destaque">desastres naturais</span>
+          para salvar vidas
+        </h1>
+        <p>
+          O OrbitGuard utiliza dados de satélites e sensores IoT
+          para antecipar riscos, enviando alertas e contribuindo
+          para prevenção de desastres.
+        </p>
+
+        <div class="hero-btns">
+          <a href="plataforma.html" class="btn-primario">Explorar Plataforma</a>
+          <a href="#problema" class="btn-secundario">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 
+       SEÇÃO 1 — PROBLEMA
+       id="problema" para o menu funcionar
+  -->
+  <section id="problema" class="secao">
+    <div class="container">
+
+      <!-- Rótulo da seção (aquele texto pequeno verde em cima) -->
+      <span class="rotulo-secao">O Problema</span>
+
+      <h2>Os desastres naturais estão cada vez mais frequentes e imprevisíveis</h2>
+
+      <!-- Grid de cards — adicione, remova ou edite os cards aqui -->
+      <div class="cards-grid">
+
+        <div class="card card-centro">
+          <div class="card-icon"><img src="./img/icon fire.svg" alt="Ícone de fogo representando queimadas"></div>
+          <h3>Queimadas</h3>
+          <p>Focos de calor se espalham rapidamente e são difíceis de estabilizar.</p>
+        </div>
+
+        <div class="card card-centro">
+          <div class="card-icon"><img src="./img/icon sun.svg" alt="Ícone de sol representando seca"></div>
+          <h3>Secas e estiagem</h3>
+          <p>Impactam a produção agrícola e o abastecimento de água para a população.</p>
+        </div>
+
+        <div class="card card-centro">
+          <div class="card-icon"><img src="./img/icon cloud rain.svg" alt="Ícone de nuvem com chuva representando enchentes"></div>
+          <h3>Chuvas e enchentes</h3>
+          <p>Causam destruição, desabrigam famílias e colocam vidas em risco.</p>
+        </div>
+
+        <div class="card card-centro">
+          <div class="card-icon"><img src="./img/icon mountain.svg" alt="Ícone de montanha representando deslizamentos"></div>
+          <h3>Umidade e deslizamentos</h3>
+          <p>Áreas com solo muito úmido podem ameaçar comunidades vulneráveis.</p>
+        </div>
+
+      </div>
+        </div>
+  </section>
+
+   <!-- ========================================
+       SEÇÃO 2 — TECNOLOGIA
+  ======================================== -->
+  <section id="tecnologia" class="secao secao-alt">
+    <div class="container">
+
+      <span class="rotulo-secao">Tecnologias Utilizadas</span>
+
+      <h2>O OrbitGuard combina tecnologias avançadas para coletar e processar dados</h2>
+
+      <div class="cards-grid cards-grid-5">
+
+        <div class="card card-centro">
+          <div class="card-icon"><img src="./img/satelite.svg" alt="Ícone de satélite">
+          </div>
+          <h3>Dados de satélite</h3>
+          <p>Imagens via satélite NASA capazes de detectar anomalias ambientais.</p>
+        </div>
+
+        <div class="card card-centro">
+          <div class="card-icon"><img src="./img/roentgen_tower-communication.svg" alt="Ícone de satélite"></div>
+          <h3>Sensores IoT</h3>
+          <p>Sensores que monitoram o clima e o ambiente em tempo real.</p>
+        </div>
+
+        <div class="card card-centro">
+          <div class="card-icon"><img src="./img/line-md_computer.png" alt="Ícone de computador"></div>
+          <h3>Plataforma Web</h3>
+          <p>Interface intuitiva para visualização de alertas e condições climáticas e ambientais, utilizando HTML, CSS e Javascript.</p>
+        </div>
+
+        <div class="card card-centro">
+          <div class="card-icon"><img src="./img/logos_python.svg" alt="Ícone de Python"></div>
+          <h3>Python</h3>
+          <p>Analisa e processa os dados para gerar previsões de risco.</p>
+        </div>
+
+        <div class="card card-centro">
+          <div class="card-icon"><img src="./img/devicon_arduino.png" alt="Ícone de Arduino"></div>
+          <h3>Arduino</h3>
+          <p>Interação com os sensores para coleta de dados no campo.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       SEÇÃO 3 — OBJETIVOS
+  ======================================== -->
+  <section id="objetivos" class="secao">
+    <div class="container">
+
+      <span class="rotulo-secao">Objetivo</span>
+
+      <h2>Nosso objetivo é transformar dados em ações que protejam vidas e o meio ambiente</h2>
+
+      <div class="cards-grid cards-grid-3">
+
+       <div class="card card-centro">
+          <div class="card-icon"><img src="./img/riscos.png" alt="Ícone de decisões"></div>
+          <h3>Antecipar riscos</h3>
+          <p>Identificar e monitorar desastres naturais com antecedência.</p>
+        </div>
+
+        <div class="card card-centro">
+          <div class="card-icon"><img src="./img/agricultor.png" alt="Ícone de agricultura"></div>
+          <h3>Apoiar agricultores</h3>
+          <p>Fornecer informações precisas para proteger lavouras.</p>
+        </div>
+
+        <div class="card card-centro">
+          <div class="card-icon"><img src="./img/decisões.png" alt="Ícone de decisões"></div>
+          <h3>Facilitar decisões</h3>
+          <p>Oferecer dados claros e confiáveis para quem precisa agir.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 4 — PÚBLICO-ALVO-->
+   
+  <section id="publico" class="secao secao-alt">
+    <div class="container">
+
+      <span class="rotulo-secao">Público-alvo</span>
+
+      <h2>O OrbitGuard foi desenvolvido para atender qualquer grupo que precisa de informações</h2>
+
+      <div class="cards-grid cards-grid-3 cards-grid-centro">
+
+        <div class="card card-centro">
+          <div class="card-icon"><img src="./img/lucide_tractor.png" alt="Ícone de tractor"></div>
+          <h3>Agricultores</h3>
+          <p>Planejamento agrícola com dados do clima e risco de seca.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+</body>
+</html>
