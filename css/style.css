@@ -117,7 +117,7 @@ img {
 ================================ */
 .hero {
   position: relative;
-  background: url('../img/Desktop - 1.png') center/cover no-repeat;
+  background: url("../img/img-fundo.png") center/cover no-repeat;
   padding: 120px 0 96px;
   border-bottom: 1px solid var(--border);
   overflow: hidden;
@@ -128,34 +128,40 @@ img {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,.16);
+  
 }
 
 .hero > .container {
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  padding-left: 16px; /* aproxima o conteúdo da esquerda */
+  padding-right: 16px;
 }
 
 /* Container do hero: 2 colunas */
 .hero-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 560px 1fr; /* deixa a coluna de texto mais estreita e alinhada à esquerda */
   align-items: center;
   gap: 40px;
   max-width: 1100px;
+  justify-items: start;
 }
+
+.hero-texto { max-width: 560px; transform: translateX(-48px); }
 
 .hero-texto {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  transition: transform .25s ease;
 }
 
 .hero h1 {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.25;
-  color: var(--text);
+  color: #000;
 }
 
 /* Palavra em destaque no título */
@@ -165,7 +171,7 @@ img {
 
 .hero p {
   font-size: 16px;
-  color: var(--text-muted);
+  color: #000;
   max-width: 480px;
 }
 
@@ -539,6 +545,7 @@ img {
   .hero-imagem {
     order: -1;
   }
+  .hero-texto { transform: none; }
 }
 
 @media (max-width: 600px) {
