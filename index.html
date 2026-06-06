@@ -181,7 +181,7 @@
   </section>
 
   <!-- SEÇÃO 4 — PÚBLICO-ALVO-->
-   
+
   <section id="publico" class="secao secao-alt">
     <div class="container">
 
@@ -201,7 +201,253 @@
     </div>
   </section>
 
+  <!--SEÇÃO 5 — BENEFÍCIOS -->
 
+  <section id="beneficios" class="secao">
+    <div class="container">
+
+      <span class="rotulo-secao">Benefícios</span>
+
+      <h2>Ao utilizar o OrbitGuard, nossos usuários têm acesso a benefícios que geram impacto real</h2>
+
+      <!-- Lista de benefícios com ícone de check -->
+      <div class="beneficios-lista">
+
+        <div class="beneficio-item">
+          <span class="check">✅</span>
+          <div>
+            <strong>Alertas rápidos</strong>
+            <p>Notificações para agir com antecedência.</p>
+          </div>
+        </div>
+
+        <div class="beneficio-item">
+          <span class="check">✅</span>
+          <div>
+            <strong>Proteção agrícola</strong>
+            <p>Dados precisos para proteger safras e garantir produtividade.</p>
+          </div>
+        </div>
+
+        <div class="beneficio-item">
+          <span class="check">✅</span>
+          <div>
+            <strong>Redução de prejuízo</strong>
+            <p>Menos perdas materiais e econômicas causadas por desastres.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+   <!-- SEÇÃO 6 — APLICAÇÃO NO DIA A DIA -->
+
+  <section id="aplicacao" class="secao secao-alt">
+    <div class="container">
+
+      <span class="rotulo-secao">Aplicação no Dia a Dia</span>
+
+      <h2>Como funciona o OrbitGuard</h2>
+
+      <!-- Fluxo em etapas — adapte os textos e ícones -->
+      <div class="fluxo">
+
+        <div class="fluxo-item">
+          <div class="fluxo-icon">🛰️</div>
+          <p>Satélites coletam dados</p>
+        </div>
+
+        <div class="fluxo-seta">→</div>
+
+        <div class="fluxo-item">
+          <div class="fluxo-icon">📡</div>
+          <p>Sensores monitoram o ambiente</p>
+        </div>
+
+        <div class="fluxo-seta">→</div>
+
+        <div class="fluxo-item">
+          <div class="fluxo-icon">⚙️</div>
+          <p>Sistema analisa e prevê riscos</p>
+        </div>
+
+        <div class="fluxo-seta">→</div>
+
+        <div class="fluxo-item">
+          <div class="fluxo-icon">🔔</div>
+          <p>Alertas são enviados</p>
+        </div>
+
+        <div class="fluxo-seta">→</div>
+
+        <div class="fluxo-item">
+          <div class="fluxo-icon">👤</div>
+          <p>Usuário toma decisões</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO SLIDESHOW-->
+
+  <section id="slideshow" class="secao secao-alt">
+    <div class="container">
+      <span class="rotulo-secao">Galeria</span>
+      <h2>O planeta monitorado em tempo real</h2>
+
+      <div class="slideshow">
+        <!-- Slides — troque os emojis/textos pelas suas imagens -->
+        <div class="slide active">
+          <div class="slide-placeholder">
+            <div class="slide-emoji">🔥</div>
+            <div class="slide-legenda">
+              <strong>Focos de queimada detectados</strong>
+              <p>Satélites NASA identificam focos de incêndio em tempo real no território brasileiro</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-placeholder slide-2">
+            <div class="slide-emoji">🌧️</div>
+            <div class="slide-legenda">
+              <strong>Monitoramento de chuvas e enchentes</strong>
+              <p>Sensores e dados orbitais rastreiam volumes de precipitação para prever alagamentos</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-placeholder slide-3">
+            <div class="slide-emoji">🌵</div>
+            <div class="slide-legenda">
+              <strong>Mapeamento de regiões em seca</strong>
+              <p>Imagens de satélite revelam índices de umidade do solo e risco de estiagem</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botões de navegação -->
+        <button class="slide-btn slide-prev" onclick="moverSlide(-1)">&#8592;</button>
+        <button class="slide-btn slide-next" onclick="moverSlide(1)">&#8594;</button>
+
+        <!-- Indicadores (bolinhas) -->
+        <div class="slide-dots">
+          <span class="dot active" onclick="irParaSlide(0)"></span>
+          <span class="dot" onclick="irParaSlide(1)"></span>
+          <span class="dot" onclick="irParaSlide(2)"></span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+   <!-- SEÇÃO QUIZ -->
+
+  <section id="quiz" class="secao">
+    <div class="container">
+      <span class="rotulo-secao">Quiz</span>
+      <h2>Teste seus conhecimentos sobre desastres naturais e satélites</h2>
+
+      <div class="quiz-box">
+
+        <!-- Progresso -->
+        <div class="quiz-progresso">
+          <span id="quiz-num">Pergunta 1 de 10</span>
+          <div class="barra-wrap">
+            <div class="barra-fill" id="barra-fill" style="width: 10%"></div>
+          </div>
+        </div>
+
+        <!-- Pergunta -->
+        <div id="quiz-area">
+          <p class="quiz-pergunta" id="quiz-pergunta">Carregando...</p>
+          <div class="quiz-opcoes" id="quiz-opcoes">
+            <!-- Opções geradas via JS -->
+          </div>
+          <p class="quiz-feedback" id="quiz-feedback"></p>
+          <button class="btn-primario" id="btn-proxima" onclick="proximaPergunta()" style="display:none; margin-top:16px;">
+            Próxima →
+          </button>
+        </div>
+
+        <!-- Resultado final (escondido até acabar) -->
+        <div id="quiz-resultado" style="display:none;" class="quiz-resultado">
+          <div class="resultado-emoji" id="resultado-emoji">🏆</div>
+          <h3 id="resultado-titulo">Parabéns!</h3>
+          <p id="resultado-texto">Você acertou X de 10 perguntas.</p>
+          <button class="btn-primario" onclick="reiniciarQuiz()" style="margin-top: 20px;">
+            Jogar novamente
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--SEÇÃO TROCA DE TEMA (Web Dev) -->
+
+  <section class="secao secao-alt">
+    <div class="container">
+      <span class="rotulo-secao">Personalizar</span>
+      <h2>Escolha o tema visual</h2>
+      <div class="temas-row">
+        <button class="tema-btn tema-verde active" onclick="trocarTema('verde')" title="Verde (padrão)">
+          🌿 Verde
+        </button>
+        <button class="tema-btn tema-azul" onclick="trocarTema('azul')" title="Azul escuro">
+          🌊 Azul
+        </button>
+        <button class="tema-btn tema-bege" onclick="trocarTema('bege')" title="Bege claro">
+          🌾 Bege
+        </button>
+      </div>
+    </div>
+  </section>
+
+   <!--FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <div class="footer-col">
+        <strong>Desenvolvedores</strong>
+        <!-- Coloque aqui o nome e RM de cada integrante -->
+        <p>Gabriella Viana Lisbôa — RM: 573504</p>
+        <p>Isadora Basso Asseiro — RM:  569323</p>
+      </div>
+
+      <div class="footer-col footer-brand">
+        <span class="logo">Orbit<span>Guard</span></span>
+        <p>O OrbitGuard transforma tecnologia em prevenção para um futuro mais seguro e sustentável.</p>
+      </div>
+
+      <div class="footer-col">
+        <strong>Contato</strong>
+        <p>📧 contato@orbitguard.com.br</p>
+        <p>📞 (11) 99999-9999</p>
+        <p>📍 Av Paulista 1106 — São Paulo</p>
+      </div>
+
+      <div class="footer-col">
+        <strong>Navegação</strong>
+        <a href="#problema">Problema</a>
+        <a href="#tecnologia">Tecnologia</a>
+        <a href="#objetivos">Objetivos</a>
+        <a href="#publico">Público-alvo</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#aplicacao">Aplicação</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      ©2026 · Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <script src="js/quiz.js"></script>
 
 </body>
 </html>
