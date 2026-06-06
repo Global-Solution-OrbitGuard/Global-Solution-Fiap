@@ -250,7 +250,7 @@ function trocarTema(tema) {
 
   // Troca as variáveis CSS de acordo com o tema escolhido
   if (tema === "verde") {
-    root.style.setProperty("--green",       "#1a7a5e");
+    root.style.setProperty("--green",       "#187B0F");
     root.style.setProperty("--green-dark",  "#085041");
     root.style.setProperty("--green-light", "#E1F5EE");
     root.style.setProperty("--bg",          "#f3f5f3");
