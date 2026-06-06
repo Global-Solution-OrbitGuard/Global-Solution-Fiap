@@ -15,7 +15,9 @@
   --bg:           #f3f5f3;
   --white:        #ffffff;
   --text:         #1a1a1a;
+  --text2:        #187B0F;
   --text-muted:   #666666;
+  --text2-muted:  #000000;
   --border:       #e0e0dc;
   --warning-bg:   #fff3e8;
   --warning-txt:  #7a3200;
@@ -127,12 +129,12 @@ body {
   font-size: 28px;
   font-weight: 700;
   text-align: center;
-  color: var(--text);
+  color: var(--text2);
 }
 
 .onboard-sub {
   font-size: 16px;
-  color: var(--text-muted);
+  color: var(--text2-muted);
   text-align: center;
   margin-top: -20px;
 }
